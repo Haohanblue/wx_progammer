@@ -1,0 +1,53 @@
+{
+    "pages": [
+        "pages/navigation/login/login",
+        "pages/navigation/register/register",
+        "pages/index/index",
+        "pages/release/release",
+        "pages/navigation/loading/loading",
+        "pages/navigation/error/error",
+        "pages/user/user",
+        "pages/user/reset/phone/phone",
+        "pages/user/reset/name/name",
+        "pages/user/reset/gender/gender",
+        "pages/order/order",
+        "pages/navigation/loadingreset/loadingreset",
+        "pages/navigation/loadingerror/loadingerror",
+        "pages/index/item/item",
+        "pages/order/releaseItem/releaseItem",
+        "pages/order/pickupItem/pickupItem",
+        "pages/chatroom/chatroom",
+        "pages/user/comment/comment"
+    ],
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/images/home.png",
+                "selectedIconPath": "/images/homeSelected.png"
+            },
+            {
+                "pagePath": "pages/release/release",
+                "text": "发布",
+                "iconPath": "/images/release.png",
+                "selectedIconPath": "/images/releaseSelected.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "个人",
+                "iconPath": "/images/user.png",
+                "selectedIconPath": "/images/userSelected.png"
+            }
+        ],
+        "selectedColor": "#5cb48e"
+    },
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "style": "v2"
+}

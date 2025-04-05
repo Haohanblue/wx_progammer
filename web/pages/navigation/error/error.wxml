@@ -1,0 +1,6 @@
+<!--pages/error/error.wxml-->
+<view>
+    <text>出错啦！</text>
+    <button bind:tap="Restart">点击回到首页</button>
+</view>
+

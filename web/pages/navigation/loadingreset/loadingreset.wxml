@@ -1,0 +1,10 @@
+<view>
+    <view class="register_success">
+        <image src="/images/success.png"></image>
+    </view>
+    <rich-text>{{success_text}}</rich-text>
+    <view style="height:182rpx"></view>
+    <view class="next_button">
+        <button class="next_button" type="{{buttonType}}" disabled="{{disabled}}"  bind:tap="swithtabIndex">{{time}}s关闭页面</button>
+    </view>
+</view>

@@ -1,0 +1,38 @@
+<view class="body">
+
+<form bindsubmit="submit">
+    <view class="container">
+        <view class="sector">
+        <text class="title">任务标题</text>
+        <input class="text" name="ordertitle" type="text" placeholder="请输入任务标题" />
+        </view>
+        <view class="sector">
+            <view class="title">任务类型</view>
+            <picker class="text2" bindchange="bindPickerChange" value="{{selectedValue}}" range="{{array}}">
+            <view class="picker">
+                当前选择：{{selectedValue}}
+            </view>
+            </picker>
+        </view>
+    <view class="sector">
+        <text class="title">任务描述</text>
+        <textarea class="textarea" name="description" placeholder="请输入任务描述，不超过50个字"></textarea>
+    </view>
+        <!-- 任务图片 -->
+        <view class="sector">
+
+        <text class="title">任务图片(自定义或选择默认图片)</text>
+        <view class="upload-image" bindtap="chooseImage">
+            
+            <image src="{{imageUrl}}" mode="aspectFill" class="image-preview" />
+        </view>
+        </view>
+        <view class="sector">
+        <text class="title">任务报酬: 元</text>
+        <input class="text" name="money" type="text" placeholder="请输入任务报酬" />   
+        </view>
+        <button class="submit-button" form-type="submit" type="primary" plain="true">提交</button>
+    </view>
+</form>
+
+</view>

@@ -1,0 +1,24 @@
+<view class="task-details">
+    <view class="task-info">
+        <view class="task-title">{{title}}</view>
+        <view class="task-reward">任务报酬：{{money}}</view>
+        <view class="task-description">{{description}}</view>
+    </view>
+
+    <view class="user-details">
+        <image class="user-avatar" src="{{useravatarUrl}}"></image>
+        <view class="user-nickname">{{userNickname}}</view>
+        <view class="user-phone">手机:{{userPhone}}</view>
+    </view>
+
+    <view class="task-timeline">
+        <view class="timeline-item">发布日期：{{releaseTime}}</view>
+        <view class="timeline-item">接取日期：{{pickupTime}}</view>
+        <view class="timeline-item">完成日期：{{finishTime}}</view>
+    </view>
+
+    <view wx:if="{{!finishState}}" class="action-buttons">
+        <view class="custom-button" bindtap="withdraw">撤回发布</view>
+
+    </view>
+</view>

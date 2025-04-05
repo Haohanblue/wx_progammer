@@ -1,0 +1,51 @@
+<!--pages/userSetting/userSetting.wxml-->
+<view class="body">
+<view class='basicinfo'>
+  <view class='basicinfo-avatar' bind:tap="switchToAvatar">
+    <image id="userinfo-avatar" src="{{avatarUrl}}" />
+  </view>
+  <text wx:if="{{isRegister}}" bind:tap="switchToNickname">{{userNickname}}</text>
+  <text wx:if="{{!isRegister}}" bind:tap="switchToRegister">点击注册</text>
+</view>
+
+<view class='moreinfo'>
+  <view class='moreinfo-block'>
+    <view class='moreinfo-item'  bind:tap="switchToName">
+      <text class='moreinfo-left'><text class="iconfont icon-yonghuxingshi"></text>姓名</text>
+      <text class='moreinfo-right'>{{name}}</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+
+    <view class="line"></view>
+
+    <view class='moreinfo-item' bind:tap="switchToGender">
+      <text class='moreinfo-left'><text class="iconfont icon-xingbie"></text>性别</text>
+      <text class='moreinfo-right'>{{gender}}</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+
+    <view class="line"></view>
+
+    <view class='moreinfo-item' bind:tap="switchToPhone" >
+      <text class='moreinfo-left'><text class="iconfont icon-phone"></text>手机号码</text>
+      <text class='moreinfo-right'>{{phone}}</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+    <view class="line"></view>
+
+    <view class='moreinfo-item' bind:tap="switchToOrder">
+      <text class='moreinfo-left'><text class="iconfont icon-fabu"></text>订单详情</text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+
+    <view class="line"></view>
+    <view class='moreinfo-item' bind:tap="switchToComment" >
+      <text class='moreinfo-left'><text class="iconfont icon-weibiaoti527"></text>留言反馈</text>
+      <text class='moreinfo-right'></text>
+      <text class="iconfont icon-youjiantou"></text>
+    </view>
+    <view class="line"></view>
+    <view class="line"></view>
+  </view>
+</view>
+</view>

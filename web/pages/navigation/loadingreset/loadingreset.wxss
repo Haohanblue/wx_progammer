@@ -1,0 +1,28 @@
+/* pages/register_success/register_success.wxss */
+
+.register_success {
+  width: 186rpx;
+  height: 186rpx;
+  margin: 0 auto;
+  margin-top: 160rpx;
+}
+.register_success image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+ rich-text {
+  text-align: center;
+  margin-top: 60rpx;
+  font-size: 40urpx;
+  color: #505050;
+  display: block;
+}
+.next_button {
+  background-color: #ed1b24;
+  color: #ffffff;
+  margin: 0 60rpx;
+  border-radius: 50rpx;
+  height: 88rpx;
+  line-height: 60rpx;
+}

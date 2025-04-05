@@ -1,0 +1,20 @@
+<view class="task-details">
+    <view class="task-info">
+        <view class="task-title">{{title}}</view>
+        <view class="task-reward">任务报酬：{{money}}</view>
+        <view class="task-description">任务描述:{{description}}</view>
+    </view>
+
+    <view class="user-details">
+        <image class="user-avatar" src="{{useravatarUrl}}"></image>
+        <view class="user-nickname">{{userNickname}}</view>
+    </view>
+
+    <view class="task-timeline">
+        <view class="timeline-item">发布日期：{{releaseTime}}</view>
+    </view>
+
+    <view wx:if="{{!finishState}}" class="action-buttons">
+        <view class="custom-button" bindtap="pickup">接取任务</view>
+    </view>
+</view>

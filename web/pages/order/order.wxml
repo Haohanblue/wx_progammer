@@ -1,0 +1,63 @@
+<view class="tab-bar">
+  <view class="tab" bindtap="showReleasedTasks">
+    <text>接受的任务</text>
+  </view>
+  <view class="tab" bindtap="showAcceptedTasks">
+    <text>发布的任务</text>
+  </view>
+</view>
+
+<view class="task-release" wx:if="{{card==2}}" wx:for="{{releaseItemList}}" wx:key="id">
+  <view class="task-item">
+    <image class="avatar" bind:tap="onPreview" data-url="{{item.imageUrl}}" src="{{item.imageUrl}}" />
+    <view class="text-block">
+      <view class="text-box">
+        <text class="title">：{{item.ordertitle}}</text>
+      </view>
+      <view class="text-box">
+        <text class="money">报酬:{{item.money}}元</text>
+      </view>
+      <view class="text-box">
+        <text class="finish">
+          <text wx:if="{{!item.pickupState}}">未接取</text>
+          <text wx:elif="{{item.finishState}}">已完成</text>
+          <text wx:else>进行中</text>
+        </text>
+      </view>
+    </view>
+    <view class="text-button" bindtap="releaseitem" data-id="{{item._id}}">
+        <text class="text">详情</text>
+    </view> 
+    <view wx:if="{{item.pickupState}}" class="text-button" bindtap="ToChatRoom" data-id="{{item._id}}">
+        <text class="text">沟通</text>   
+    </view>
+  </view>
+</view>
+
+<view class="task-accept" wx:if="{{card==1}}" wx:for="{{pickupItemList}}" wx:key="id">
+  <view class="task-item">
+    <image class="avatar" bind:tap="onPreview" data-url="{{item.imageUrl}}" src="{{item.imageUrl}}" />
+    <view class="text-block">
+      <view class="text-box">
+        <text class="title">{{item.ordertitle}}</text>
+      </view>
+      <view class="text-box">
+        <text class="money">报酬:{{item.money}}元</text>
+      </view>
+      <view class="text-box">
+        <text class="finish">
+          <text wx:if="{{item.finishState}}">已完成</text>
+          <text wx:else>进行中</text>
+        </text>
+      </view>
+    </view>
+
+    <view class="text-button" bindtap="pickupitem" data-id="{{item._id}}">
+        <text class="text">详情</text>
+    </view> 
+    <view  class="text-button" bindtap="ToChatRoom" data-id="{{item._id}}">
+        <text class="text">沟通</text>  
+    </view>
+
+  </view>
+</view>

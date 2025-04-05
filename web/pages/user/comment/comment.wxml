@@ -1,0 +1,9 @@
+<view class="container">
+  <form bindsubmit="submit">
+    <view class="text-input">
+    <text>留言：</text><textarea name="comment" type="text" placeholder="你有什么意见都可以告诉我们哦~" ></textarea>
+    </view>
+    <button form-type="submit" type="primary" plain="true">提交</button>
+  </form>
+  <button bind:tap="goback" type="primary" plain="true">返回</button>
+</view>

@@ -1,0 +1,99 @@
+.container {
+    background-color:#fffcfe;
+    padding: 20rpx; /* 使用rpx作为单位 */
+    border-radius: 8rpx; /* 使用rpx作为单位 */
+    margin-bottom: 10vh;
+    margin: 3vh;
+    height: 90vh;
+}
+.sector{
+    width: 100%;
+    margin-bottom: 20rpx;
+}
+.body{
+    height: 100vh;
+}
+.text-bold {
+    font-weight: bold;
+    margin-bottom: 5rpx;
+    display: block;
+}
+.title{
+    position: relative;
+    margin-left: 20rpx;
+    text-align: left;
+    font-size: larger;
+    font-weight:bold
+}
+.text{
+    height: 50rpx;
+    width: 100%;
+    padding: 8rpx;
+    margin-bottom: 15rpx;
+    border: 1rpx solid #ccc; /* 使用rpx作为单位 */
+    border-radius: 5rpx; /* 使用rpx作为单位 */
+    box-sizing: border-box;
+}
+.text2{
+    height: 80rpx;
+    width: 100%;
+    padding: 8rpx;
+    margin-bottom: 15rpx;
+    border: 1rpx solid #ccc; /* 使用rpx作为单位 */
+    border-radius: 5rpx; /* 使用rpx作为单位 */
+    box-sizing: border-box;
+}
+.textarea {
+    width: 100%;
+    padding: 8rpx;
+    margin-bottom: 15rpx;
+    border: 1rpx solid #ccc; /* 使用rpx作为单位 */
+    border-radius: 5rpx; /* 使用rpx作为单位 */
+    box-sizing: border-box;
+}
+
+.section {
+    margin-bottom: 20rpx; /* 使用rpx作为单位 */
+}
+
+.section-text-bold {
+    font-weight: bold;
+    margin-bottom: 10rpx; /* 使用rpx作为单位 */
+    display: block;
+}
+
+.picker {
+    border-radius: 5rpx; /* 使用rpx作为单位 */
+    padding: 8rpx;
+    margin-bottom: 15rpx; /* 使用rpx作为单位 */
+}
+
+.upload-image {
+    border: 1rpx dashed #ccc; /* 使用rpx作为单位 */
+    border-radius: 5rpx; /* 使用rpx作为单位 */
+    padding: 15rpx;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20rpx; /* 使用rpx作为单位 */
+}
+
+.upload-image-text-bold {
+    margin-bottom: 10rpx; /* 使用rpx作为单位 */
+    display: block;
+}
+
+.image-preview {
+    width: 100rpx; /* 使用rpx作为单位 */
+    height: 100rpx; /* 使用rpx作为单位 */
+    margin-top: 10rpx; /* 使用rpx作为单位 */
+    border-radius: 5rpx; /* 使用rpx作为单位 */
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10rpx; /* 使用rpx作为单位 */
+    border-radius: 5rpx; /* 使用rpx作为单位 */
+    cursor: pointer;
+}

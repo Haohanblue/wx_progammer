@@ -1,0 +1,87 @@
+/* 全局样式 */
+.page {
+    background-color: #f3f3f3; /* 设置页面背景色 */
+    padding: 20px; /* 设置页面内边距 */
+
+}
+
+/* 任务详情样式 */
+.task-details {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 任务信息样式 */
+.task-info {
+    margin-bottom: 20px;
+}
+
+.task-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.task-reward {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.task-description {
+    font-size: 18px;
+    color: #444444;
+}
+
+/* 用户信息样式 */
+.user-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-nickname {
+    font-size: 16px;
+    color: #55aa55;
+}
+
+/* 时间线样式 */
+.task-timeline {
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+/* 操作按钮样式 */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #55aa55;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #449944;
+}
